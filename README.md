@@ -1,12 +1,12 @@
 # LLL Solutions website
 
-Static HTML website for LLL Solutions, LLC.
+Static capture of the public WordPress site for LLL Solutions, LLC.
 
-## Structure
+The checked-in HTML is the rendered WordPress output. Theme fonts, images, WordPress block styles,
+and the responsive navigation runtime are hosted locally so the site has no Hostinger runtime
+dependency. There is no PHP, database, WordPress admin, or plugin execution.
 
-- `assets/styles.css` contains shared design tokens and reusable layout/components.
-- `assets/site.js` supplies the shared header and footer.
-- Each public URL has its own plain `index.html` file.
+## Updating the site
 
-Serve the repository root locally with any static HTTP server. Absolute paths are used because
-the production site is hosted at the domain root.
+Edit the relevant page's `index.html`. Shared WordPress assets live under `wp-content/` and
+`wp-includes/`. Preserve the existing public page paths because external links may depend on them.
